@@ -2,6 +2,7 @@ export interface ExpandableEntry {
   id: string;
   title: string;
   organization?: string;
+  organizationNote?: string;
   role?: string;
   timeframe?: string;
   location?: string;

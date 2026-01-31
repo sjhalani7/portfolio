@@ -129,6 +129,11 @@ function ExpandableListItem({ item, expanded, onToggle }: ItemProps) {
           {item.organization ? (
             <span className={styles.meta}>{item.organization}</span>
           ) : null}
+          {item.organizationNote ? (
+            <span className={clsx(styles.meta, styles.organizationNote)}>
+              {item.organizationNote}
+            </span>
+          ) : null}
           {item.timeframe || item.location ? (
             <span className={styles.meta}>
               {item.timeframe}

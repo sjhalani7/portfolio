@@ -95,6 +95,11 @@
   font-size: 0.9rem;
 }
 
+.organizationNote {
+  font-style: italic;
+  color: var(--color-text-muted);
+}
+
 .chevronButton {
   width: 40px;
   height: 40px;
