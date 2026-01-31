@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Container } from "./Container";
 import styles from "./Navbar.module.css";
+import { getAssetPath } from "@/lib/paths";
 
 const NAV_LINKS = [
   { label: "About", route: "/" },
@@ -16,7 +17,7 @@ const NAV_LINKS = [
 ] as const;
 
 const EXTERNAL_LINKS: Record<string, string> = {
-  resume: "/docs/resume.pdf",
+  resume: getAssetPath("/docs/resume.pdf"),
 };
 
 export function Navbar() {

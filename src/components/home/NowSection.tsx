@@ -5,6 +5,7 @@ import { PanelCard } from "@/components/ui/PanelCard";
 import { Pill } from "@/components/ui/Pill";
 import { formatUpdatedDate } from "@/lib/dates";
 import { personalityHighlights } from "@/data/personality";
+import { getAssetPath } from "@/lib/paths";
 import type {
   GithubSummary,
   LearningItem,
@@ -148,7 +149,7 @@ export function NowSection({ learning, readingQueue, github }: NowSectionProps) 
               <PanelCard key={item.id} className={styles.personalityCard}>
                 <div className={styles.personalityMedia}>
                   <Image
-                    src={item.image.src}
+                    src={getAssetPath(item.image.src)}
                     alt={item.image.alt}
                     width={600}
                     height={400}

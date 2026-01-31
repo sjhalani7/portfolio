@@ -3,6 +3,7 @@ import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import { ButtonLink } from "@/components/ui/ButtonLink";
 import { Pill } from "@/components/ui/Pill";
+import { getAssetPath } from "@/lib/paths";
 import styles from "./Hero.module.css";
 
 const HERO_PARAGRAPHS = [
@@ -13,6 +14,8 @@ const HERO_PARAGRAPHS = [
 ];
 
 export function Hero() {
+  const profileImageSrc = getAssetPath("/images/my_pic111.jpg");
+
   return (
     <Section className={styles.section}>
       <Container>
@@ -40,7 +43,7 @@ export function Hero() {
           </div>
           <div className={styles.profileFrame}>
             <Image
-              src="/images/my_pic111.jpg"
+              src={profileImageSrc}
               alt="Photo of Shiv Jhalani"
               fill
               className={styles.profileImage}

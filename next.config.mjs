@@ -1,5 +1,7 @@
 const repoName = "portfolio";
 const isProd = process.env.NODE_ENV === "production";
+const basePath = isProd ? `/${repoName}` : "";
+const assetPrefix = isProd ? `/${repoName}/` : undefined;
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -8,8 +10,11 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: isProd ? `/${repoName}` : undefined,
-  assetPrefix: isProd ? `/${repoName}/` : undefined,
+  basePath: basePath || undefined,
+  assetPrefix,
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
 };
 
 export default nextConfig;

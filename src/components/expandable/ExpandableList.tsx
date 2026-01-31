@@ -6,6 +6,7 @@ import { useEffect, useId, useMemo, useRef, useState } from "react";
 import type { CSSProperties } from "react";
 import { Pill } from "@/components/ui/Pill";
 import type { ExpandableEntry } from "@/types/experience";
+import { getAssetPath } from "@/lib/paths";
 import styles from "./ExpandableList.module.css";
 
 interface ExpandableListProps {
@@ -103,7 +104,7 @@ function ExpandableListItem({ item, expanded, onToggle }: ItemProps) {
           style={coverStyle}
         >
           <Image
-            src={cover.src}
+            src={getAssetPath(cover.src)}
             alt={cover.alt}
             width={coverWidth}
             height={coverHeight}
@@ -169,7 +170,7 @@ function ExpandableListItem({ item, expanded, onToggle }: ItemProps) {
                     className={clsx(styles.mediaFrame, isLogo && styles.mediaLogo)}
                   >
                     <Image
-                      src={mediaItem.src}
+                      src={getAssetPath(mediaItem.src)}
                       alt={mediaItem.alt}
                       width={800}
                       height={600}
