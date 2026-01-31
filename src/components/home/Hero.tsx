@@ -32,6 +32,9 @@ export function Hero() {
                 <p key={text}>{text}</p>
               ))}
             </div>
+            <p className={styles.note}>
+              * P.S. I just love using em-dashes, I promise it&apos;s not what it looks like.
+            </p>
             <div className={styles.buttonRow}>
               <ButtonLink href="/work" label="Work Experience" variant="primary" />
               <ButtonLink
@@ -40,9 +43,6 @@ export function Hero() {
                 variant="secondary"
               />
             </div>
-            <p className={styles.note}>
-              * P.S. I just love using em-dashes, I promise it&apos;s not what it looks like.
-            </p>
           </div>
           <div className={styles.profileFrame}>
             <Image
