@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Shiv Jhalani — personal site
 
-## Getting Started
+Docs-inspired Next.js site for Shiv’s portfolio. It includes a fully themed UI system, expandable content routes, and live data for the "GitHub Snapshot" section that is refreshed every day.
 
-First, run the development server:
+## Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The app uses the `/src` directory structure with the App Router. Theme tokens are defined in `src/app/globals.css`, and shared components live under `src/components`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Static builds (GitHub Pages)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+`next.config.mjs` is set to `output: "export"`, so `npm run build` produces an `out/` folder with static assets. Deploy that folder directly to GitHub Pages (e.g., via `peaceiris/actions-gh-pages` or the new Pages Deploy workflow). If you host at `https://<username>.github.io/<repo>/`, configure the Pages workflow to copy everything from `out/`.
 
-## Learn More
+### Assets to replace
 
-To learn more about Next.js, take a look at the following resources:
+- `public/images/headshot.jpg` – hero photo on the home page.
+- `public/images/INRIXlogo.png` and `public/images/ntt.png` – swap in company logos (add more next to them if needed).
+- `public/images/projects/*`, `public/images/research/*`, and `public/images/hobbies/*` – drop in real project/award/personal photos.
+- `public/docs/resume.pdf` – the navbar’s Resume link points here.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Updating the GitHub snapshot locally
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The GitHub panel reads from `src/data/githubSummary.json`. Run the following to refresh it:
 
-## Deploy on Vercel
+```bash
+GITHUB_TOKEN=<personal-access-token> npm run update:github-summary
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Environment variables:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `GITHUB_USERNAME` (default: `shivjhalani`)
+- `GITHUB_ACTIVITY_TIMEZONE` (default: `America/Los_Angeles`)
+- `GITHUB_ACTIVITY_TZ_LABEL` (default: `PT`)
+
+The script looks at the latest 100 public events + repositories for that user and rewrites the JSON file.
+
+### Automated refresh
+
+`.github/workflows/update-github-summary.yml` runs every day at 07:00 UTC (plus manual `workflow_dispatch`). It executes the same script with the built-in `GITHUB_TOKEN`, commits `src/data/githubSummary.json` when changes occur, and pushes back to `main`.
+
+## Linting
+
+```bash
+npm run lint
+```
+
+## Deployment
+
+Deploy anywhere that supports Next.js 13 App Router (Vercel, Netlify, custom Node server, etc.).

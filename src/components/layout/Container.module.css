@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+  max-width: var(--layout-max-width);
+  margin: 0 auto;
+  padding-left: var(--layout-padding-desktop);
+  padding-right: var(--layout-padding-desktop);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding-left: var(--layout-padding-tablet);
+    padding-right: var(--layout-padding-tablet);
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding-left: var(--layout-padding-mobile);
+    padding-right: var(--layout-padding-mobile);
+  }
+}

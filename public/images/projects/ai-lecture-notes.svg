@@ -1,0 +1,67 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ainotes-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f131a" />
+      <stop offset="100%" stop-color="#151f2c" />
+    </linearGradient>
+    <linearGradient id="ainotes-wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7dc3ff" />
+      <stop offset="100%" stop-color="#8ea270" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" rx="48" fill="url(#ainotes-bg)" />
+
+  <g transform="translate(140 150)">
+    <rect x="0" y="0" width="520" height="420" rx="32" fill="#0d1722" stroke="#1e2c3c" stroke-width="2" />
+    <text x="36" y="60" font-family="'Inter', sans-serif" font-size="28" fill="#f0f4f7">Lecture Audio</text>
+    <rect x="36" y="90" width="448" height="180" rx="18" fill="#111f2c" stroke="#1f2f43" />
+    <polyline points="60,180 90,140 120,210 150,120 180,200 210,150 240,220 270,110 300,200 330,130 360,210 390,140 420,200 450,120"
+      fill="none" stroke="url(#ainotes-wave)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+    <rect x="36" y="300" width="180" height="24" rx="12" fill="#132030" />
+    <rect x="230" y="300" width="120" height="24" rx="12" fill="#132030" />
+    <rect x="370" y="300" width="114" height="24" rx="12" fill="#132030" />
+  </g>
+
+  <g transform="translate(680 120)">
+    <rect x="0" y="0" width="380" height="480" rx="32" fill="#111c28" stroke="#1f2c3d" stroke-width="2" />
+    <text x="32" y="66" font-family="'Inter', sans-serif" font-size="26" fill="#f0f4f7">Structured Notes</text>
+    <rect x="32" y="96" width="316" height="44" rx="14" fill="#182636" />
+    <rect x="32" y="154" width="316" height="44" rx="14" fill="#182636" />
+    <rect x="32" y="212" width="316" height="44" rx="14" fill="#182636" />
+    <rect x="32" y="270" width="316" height="44" rx="14" fill="#182636" />
+    <g fill="#8ea270" font-family="'Inter', sans-serif" font-weight="600" font-size="20">
+      <text x="48" y="125">Key Concepts</text>
+      <text x="48" y="183">Examples</text>
+      <text x="48" y="241">Context</text>
+      <text x="48" y="299">Action Items</text>
+    </g>
+    <g stroke="#2e3d4c" stroke-width="2">
+      <line x1="32" y1="340" x2="348" y2="340" />
+      <line x1="32" y1="380" x2="348" y2="380" />
+      <line x1="32" y1="420" x2="348" y2="420" />
+    </g>
+    <circle cx="320" cy="60" r="18" fill="#8ea270" opacity="0.4" />
+  </g>
+
+  <g transform="translate(240 600)">
+    <rect x="0" y="0" width="720" height="70" rx="20" fill="#111b25" stroke="#1f2a3a" />
+    <text x="360" y="45" text-anchor="middle" font-family="'Inter', sans-serif" font-size="34" font-weight="600" fill="#f4f6f8">
+      AI Lecture Note-Taking Assistant
+    </text>
+  </g>
+
+  <g transform="translate(560 320)">
+    <rect x="-60" y="-36" width="120" height="72" rx="16" fill="#132031" stroke="#223346" />
+    <path d="M-30 -6 L-10 -6" stroke="#7dc3ff" stroke-width="6" stroke-linecap="round" />
+    <circle cx="5" cy="-6" r="7" fill="#8ea270" />
+    <path d="M-30 10 L-10 10" stroke="#7dc3ff" stroke-width="6" stroke-linecap="round" />
+    <circle cx="5" cy="10" r="7" fill="#8ea270" />
+  </g>
+
+  <g transform="translate(520 420)">
+    <rect x="-80" y="-30" width="160" height="60" rx="14" fill="#1b2a3a" stroke="#29384a" />
+    <text x="0" y="10" text-anchor="middle" font-family="'Inter', sans-serif" font-size="20" fill="#c5ccd3">
+      Google Docs Sync
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hs-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a111c" />
+      <stop offset="100%" stop-color="#331b39" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" rx="50" fill="url(#hs-bg)" />
+  <g transform="translate(280 150)" fill="none" stroke-width="6">
+    <circle cx="160" cy="120" r="70" stroke="#f2f3f0" />
+    <circle cx="420" cy="80" r="70" stroke="#8ea270" />
+    <circle cx="620" cy="220" r="70" stroke="#f2c94c" />
+    <circle cx="260" cy="300" r="70" stroke="#c96f5f" />
+    <circle cx="520" cy="320" r="70" stroke="#8ea270" />
+    <circle cx="760" cy="320" r="70" stroke="#f2f3f0" />
+    <line x1="230" y1="160" x2="380" y2="120" stroke="#f2f3f0" opacity="0.7" />
+    <line x1="460" y1="120" x2="580" y2="200" stroke="#8ea270" opacity="0.8" />
+    <line x1="200" y1="180" x2="260" y2="260" stroke="#c96f5f" />
+    <line x1="460" y1="320" x2="680" y2="320" stroke="#f2f3f0" opacity="0.6" />
+    <line x1="580" y1="240" x2="540" y2="280" stroke="#f2c94c" opacity="0.6" />
+  </g>
+  <g font-family="'Inter', sans-serif" font-size="32" fill="#f2f3f0" font-weight="600">
+    <text x="410" y="560">PageRank Influence</text>
+    <text x="410" y="610" fill="#8ea270">Detecting spreaders</text>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+.wrapper {
+  margin-bottom: 2.5rem;
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0.3rem;
+}
+
+.title {
+  font-size: clamp(2rem, 1.8rem + 1vw, 2.8rem);
+  letter-spacing: var(--tracking-tight);
+  line-height: var(--line-height-heading);
+}
+
+.description {
+  color: var(--color-text-secondary);
+  margin-top: 0.75rem;
+  max-width: 720px;
+}

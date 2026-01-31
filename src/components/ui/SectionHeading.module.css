@@ -1,0 +1,24 @@
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+}
+
+.title {
+  font-size: clamp(1.3rem, 1.2rem + 1vw, 2rem);
+  letter-spacing: var(--tracking-tight);
+  line-height: var(--line-height-heading);
+}
+
+.description {
+  color: var(--color-text-secondary);
+  max-width: 640px;
+}

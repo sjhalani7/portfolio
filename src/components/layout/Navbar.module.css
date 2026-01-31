@@ -1,0 +1,116 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--color-bg-overlay);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-border-subtle);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.brand {
+  font-weight: 600;
+  letter-spacing: var(--tracking-tight);
+  font-size: 1rem;
+  color: var(--color-text-primary);
+}
+
+.brand:hover {
+  color: var(--color-accent-hover);
+}
+
+.navList {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  position: relative;
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  line-height: 1;
+  transition: color var(--motion-duration-fast)
+    var(--motion-ease-standard);
+  padding: 0.25rem 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.navLink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 100%;
+  background-color: var(--color-accent);
+  transform-origin: left;
+  transform: scaleX(0);
+  opacity: 0;
+  transition: transform var(--motion-duration-fast)
+      var(--motion-ease-standard),
+    opacity var(--motion-duration-fast) var(--motion-ease-standard);
+}
+
+.navLink:hover,
+.navLink:focus-visible {
+  color: var(--color-text-primary);
+}
+
+.navLink:hover::after,
+.navLink[data-active="true"]::after {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+.navLink[data-active="true"] {
+  color: var(--color-text-primary);
+}
+
+.externalIcon {
+  display: inline-flex;
+  transform: translateY(-1px);
+  font-size: 0.85em;
+  color: var(--color-text-muted);
+  transition: color var(--motion-duration-fast)
+    var(--motion-ease-standard);
+}
+
+.navLink:hover .externalIcon,
+.navLink:focus-visible .externalIcon {
+  color: var(--color-text-primary);
+}
+
+@media (max-width: 900px) {
+  .navList {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .inner {
+    flex-direction: column;
+    gap: 0.75rem;
+    height: auto;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .navList {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

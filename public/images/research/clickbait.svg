@@ -1,0 +1,30 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cb-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f1720" />
+      <stop offset="100%" stop-color="#1d2c33" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" rx="50" fill="url(#cb-bg)" />
+  <g transform="translate(240 180)">
+    <rect x="0" y="0" width="720" height="360" rx="28" fill="#101a24" stroke="#273444" stroke-width="3" />
+    <g stroke="#7fa6ff" stroke-linecap="round" stroke-width="10" opacity="0.5">
+      <path d="M80 120 H 620" />
+      <path d="M80 200 H 620" />
+    </g>
+    <g>
+      <rect x="560" y="40" width="120" height="60" rx="16" fill="#c96f5f" opacity="0.8" />
+      <rect x="200" y="160" width="200" height="60" rx="16" fill="#8ea270" opacity="0.8" />
+      <rect x="360" y="260" width="220" height="60" rx="16" fill="#c96f5f" opacity="0.8" />
+    </g>
+    <g font-family="'Inter', sans-serif" font-size="32" font-weight="600">
+      <text x="100" y="90" fill="#f2f3f0">Title similarity</text>
+      <text x="100" y="260" fill="#f2f3f0">Transcript score</text>
+      <text x="580" y="80" fill="#101a24">⚠</text>
+      <text x="420" y="300" fill="#101a24">⚠</text>
+    </g>
+    <circle cx="600" cy="260" r="50" stroke="#f2f3f0" stroke-width="8" fill="none" opacity="0.7" />
+    <path d="M572 260 L592 280 L628 244" stroke="#f2f3f0" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <text x="600" y="640" text-anchor="middle" fill="#f2f3f0" font-family="'Inter', sans-serif" font-size="48" font-weight="600">Clickbait topic modeling</text>
+</svg>

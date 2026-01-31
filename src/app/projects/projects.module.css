@@ -1,0 +1,13 @@
+.block {
+  margin-bottom: 2.5rem;
+}
+
+.block:last-child {
+  margin-bottom: 0;
+}
+
+.heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: var(--tracking-tight);
+}

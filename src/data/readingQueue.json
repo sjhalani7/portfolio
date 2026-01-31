@@ -1,0 +1,34 @@
+[
+  {
+    "id": "greenlights",
+    "title": "Greenlights",
+    "kind": "book",
+    "authorOrSource": "Matthew McConaughey",
+    "status": "in_progress",
+    "note": "Didn’t realize he was on the law-school track. Awed by his humility the first time he dealt with fame."
+  },
+  {
+    "id": "ddia",
+    "title": "Designing Data-Intensive Applications",
+    "kind": "book",
+    "authorOrSource": "Martin Kleppmann",
+    "status": "in_progress",
+    "note": "Replicas are more than copies—leaders, followers, and lag windows all add gnarly coordination issues I took for granted."
+  },
+  {
+    "id": "dwarkesh",
+    "title": "The Dwarkesh Podcast",
+    "kind": "podcast",
+    "authorOrSource": "Dwarkesh Patel",
+    "status": "in_progress",
+    "note": "Currently on the Andrej Karpathy episode—loved his breakdown of how AI co-pilots reshaped his day-to-day workflow."
+  },
+  {
+    "id": "how-i-built-this",
+    "title": "How I Built This",
+    "kind": "podcast",
+    "authorOrSource": "Guy Raz",
+    "status": "in_progress",
+    "note": "Favorite takeaway: every single founder seems to be doubted right before their inflection point."
+  }
+]

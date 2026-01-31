@@ -1,0 +1,17 @@
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.25rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-border-subtle);
+  background: var(--color-bg-raised);
+  color: var(--color-text-secondary);
+  font-size: 0.85rem;
+  letter-spacing: var(--tracking-normal);
+}
+
+.dense {
+  font-size: 0.78rem;
+  padding: 0.2rem 0.65rem;
+}

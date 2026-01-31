@@ -1,0 +1,32 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hm-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111821" />
+      <stop offset="100%" stop-color="#1b2b31" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" rx="50" fill="url(#hm-bg)" />
+  <g transform="translate(240 170)">
+    <rect x="0" y="0" width="720" height="380" rx="26" fill="#0f1821" stroke="#2a3846" stroke-width="2" />
+    <rect x="60" y="70" width="600" height="70" rx="20" fill="#151f2c" />
+    <rect x="60" y="170" width="270" height="70" rx="20" fill="#151f2c" />
+    <rect x="360" y="170" width="300" height="70" rx="20" fill="#151f2c" />
+    <g font-family="'Inter', sans-serif" font-size="30" fill="#f2f3f0">
+      <text x="100" y="120">Symptoms → Specialist</text>
+      <text x="100" y="220">LLM Suggestion</text>
+      <text x="400" y="220">Confidence</text>
+    </g>
+    <rect x="100" y="260" width="200" height="40" rx="12" fill="#1f2c3a" />
+    <rect x="420" y="260" width="160" height="40" rx="12" fill="#1f2c3a" />
+    <circle cx="640" cy="300" r="50" stroke="#8ea270" stroke-width="10" fill="none" />
+    <path d="M610 300 L628 318 L662 282" stroke="#8ea270" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+  <g transform="translate(860 150)">
+    <rect x="0" y="0" width="200" height="400" rx="32" fill="#15202c" stroke="#273549" stroke-width="2" />
+    <circle cx="100" cy="80" r="34" fill="#c96f5f" opacity="0.8" />
+    <rect x="44" y="160" width="110" height="28" rx="12" fill="#1e2b3a" />
+    <rect x="44" y="210" width="110" height="28" rx="12" fill="#1e2b3a" />
+    <rect x="44" y="260" width="110" height="28" rx="12" fill="#1e2b3a" />
+  </g>
+  <text x="600" y="640" text-anchor="middle" fill="#f2f3f0" font-family="'Inter', sans-serif" font-size="48" font-weight="600">Health Match</text>
+</svg>
