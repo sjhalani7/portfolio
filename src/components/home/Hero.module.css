@@ -71,6 +71,13 @@
   content: none;
 }
 
+@supports not (aspect-ratio: 1 / 1) {
+  .profileFrame {
+    height: 0;
+    padding-bottom: 125%;
+  }
+}
+
 .profileFrame:hover {
   transform: translateY(-2px) rotate(-0.35deg);
   border-color: var(--color-border-hover);
@@ -101,6 +108,7 @@
 
   .profileFrame {
     max-width: 420px;
+    width: 100%;
     justify-self: center;
   }
 }
