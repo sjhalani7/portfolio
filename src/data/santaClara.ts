@@ -33,7 +33,7 @@ export const santaClaraLife: ExpandableEntry[] = [
     tags: ["Honors", "Awards"],
     media: [
       {
-        src: "/images/santaclara/award.jpg",
+        src: "/images/santaclara/award.JPG",
         alt: "Receiving the Student Life Award",
         variant: "photo",
         width: 3500,
