@@ -7,7 +7,7 @@ import { execSync } from "child_process";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const username = process.env.GITHUB_USERNAME || "shivjhalani";
+const username = process.env.GITHUB_USERNAME || "sjhalani7";
 const token = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || process.env.GITHUB_ACTION_TOKEN;
 const activityTimeZone = process.env.GITHUB_ACTIVITY_TIMEZONE || "America/Los_Angeles";
 const activityTzLabel = process.env.GITHUB_ACTIVITY_TZ_LABEL || "PT";

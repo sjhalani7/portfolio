@@ -18,7 +18,7 @@ jobs:
       - name: Update GitHub summary snapshot
         run: npm run update:github-summary
         env:
-          GITHUB_USERNAME: shivjhalani
+          GITHUB_USERNAME: sjhalani7
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Commit new snapshot
         run: |
