@@ -47,6 +47,13 @@
   gap: 0.75rem;
 }
 
+.note {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+  margin-top: -1rem;
+}
+
 .profileFrame {
   position: relative;
   aspect-ratio: 4 / 5;

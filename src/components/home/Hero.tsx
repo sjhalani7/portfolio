@@ -40,6 +40,9 @@ export function Hero() {
                 variant="secondary"
               />
             </div>
+            <p className={styles.note}>
+              * P.S. I just love using em-dashes, I promise it&apos;s not what it looks like.
+            </p>
           </div>
           <div className={styles.profileFrame}>
             <Image

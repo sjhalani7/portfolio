@@ -2,7 +2,9 @@ import { Container } from "./Container";
 import styles from "./Footer.module.css";
 
 const FOOTER_LINKS = [
-  { label: "Email", href: "mailto:hello@shivjhalani.com" },
+  { label: "Email", href: "mailto:shivjhalani@gmail.com" },
+  { label: "GitHub", href: "https://github.com/sjhalani7" },
+  { label: "Twitter", href: "https://x.com/shivjhalani7" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/shivjhalani/" },
 ];
 
