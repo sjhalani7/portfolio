@@ -1,0 +1,599 @@
+{
+  "generatedAt": "2026-02-03T14:32:37.599Z",
+  "site": {
+    "owner": "Shiv Jhalani",
+    "focusAreas": [
+      "Software Engineer @ INRIX",
+      "Backend • Data • Product"
+    ],
+    "note": "* P.S. I just love using em-dashes, I promise it’s not what it looks like."
+  },
+  "hero": {
+    "kicker": "Hi, I’m",
+    "name": "Shiv Jhalani",
+    "paragraphs": [
+      "Hi, I’m Shiv Jhalani — a backend-focused software engineer at INRIX with a strong interest in data, product engineering, and modern AI-driven systems.",
+      "I’m motivated by curiosity and learn best by building: from experimenting with embeddings and search, to prototyping agentic AI systems, to shipping data-heavy features and services in production. I enjoy working with new ideas, new tools, and new technologies, and turning them into real, working products.",
+      "I use modern AI tools as part of my workflow — not as a shortcut, but as leverage. I care about shipping faster, iterating intelligently, and then applying strong fundamentals to make the result correct, reliable, and maintainable.",
+      "What keeps me motivated is how quickly this field evolves. I have a constant need to keep up — new tools, new approaches, new ideas — and I enjoy turning that motion into real projects that solve real problems. I’m always building, always learning, and always looking for the next interesting problem to dive into."
+    ]
+  },
+  "now": {
+    "learning": [
+      {
+        "id": "agentic-commerce-protocol",
+        "title": "Agentic Commerce Protocol (ACP)",
+        "summary": "Working through how ACP’s protocol layers let merchants — even small local shops — plug in, broadcast inventory, and settle transactions agent-to-agent.",
+        "tag": "Agentic Systems",
+        "updatedAtISO": "2025-01-15T12:00:00.000Z",
+        "note": "Currently learning the basics of protocols"
+      },
+      {
+        "id": "transformer-black-box",
+        "title": "Transformers, attention, and the LLM black box",
+        "summary": "Building intuition for vectors, embeddings, and attention weights, and their interactions with one another",
+        "tag": "Deep Learning",
+        "updatedAtISO": "2025-01-14T12:00:00.000Z",
+        "note": "Currently understanding QKV for attention."
+      }
+    ],
+    "readingQueue": [
+      {
+        "id": "greenlights",
+        "title": "Greenlights",
+        "kind": "book",
+        "authorOrSource": "Matthew McConaughey",
+        "status": "in_progress",
+        "note": "Didn’t realize he was on the law-school track. Awed by his humility the first time he dealt with fame."
+      },
+      {
+        "id": "ddia",
+        "title": "Designing Data-Intensive Applications",
+        "kind": "book",
+        "authorOrSource": "Martin Kleppmann",
+        "status": "in_progress",
+        "note": "Replicas are more than copies—leaders, followers, and lag windows all add gnarly coordination issues I took for granted."
+      },
+      {
+        "id": "dwarkesh",
+        "title": "The Dwarkesh Podcast",
+        "kind": "podcast",
+        "authorOrSource": "Dwarkesh Patel",
+        "status": "in_progress",
+        "note": "Currently on the Andrej Karpathy episode—loved his breakdown of how AI co-pilots reshaped his day-to-day workflow."
+      },
+      {
+        "id": "how-i-built-this",
+        "title": "How I Built This",
+        "kind": "podcast",
+        "authorOrSource": "Guy Raz",
+        "status": "in_progress",
+        "note": "Favorite takeaway: every single founder seems to be doubted right before their inflection point."
+      }
+    ],
+    "githubSummary": {
+      "mostActiveHour": "11 PM–12 AM PT",
+      "languages": "TypeScript, Python, Jupyter Notebook",
+      "focus": "Shipping portfolio",
+      "siteLastUpdated": "Feb 2, 2026",
+      "siteLastChange": "chore: refresh GitHub summary data"
+    },
+    "personalityHighlights": [
+      {
+        "id": "cooking",
+        "title": "Home Chef",
+        "description": "Cooking lets me unplug, experiment with flavor, and share something tangible with the people I care about.",
+        "details": "I’ll chase fancy plating one night and crave simple comfort food the next—but the through-line is cooking for others. I love recreating restaurant dishes to understand every step, then sharing the results with friends and family.",
+        "image": {
+          "src": "/images/hobbies/food2.jpeg",
+          "alt": "Cooking a favorite recipe"
+        }
+      },
+      {
+        "id": "golf",
+        "title": "Weekend Golfer",
+        "description": "Golf is my reset button and the newest obsession I’m trying to level up.",
+        "details": "I’m still new, but I’m hooked on the pursuit of that one flushed shot that lands pin-high. It’s wild how hard a stationary ball can be to hit—perfect practice in patience and iteration.",
+        "image": {
+          "src": "/images/hobbies/golf.jpeg",
+          "alt": "On the course"
+        }
+      },
+      {
+        "id": "badminton",
+        "title": "Badminton Regular",
+        "description": "Quick rallies, quicker decisions (plus the lifting sessions that keep me ready for them).",
+        "details": "I grew up playing competitively, so it’s still my go-to for high-intensity cardio. Weekly doubles plus strength work keep the timing, positioning, and explosive movement dialed in.",
+        "image": {
+          "src": "/images/hobbies/badminton.png",
+          "alt": "Badminton court"
+        }
+      }
+    ]
+  },
+  "collections": {
+    "workExperience": [
+      {
+        "id": "inrix-backend-2025",
+        "title": "Backend Software Engineer",
+        "organization": "INRIX",
+        "organizationNote": "INRIX is one of the longest-running traffic intelligence providers, ingesting global mobility data streams.",
+        "timeframe": "Aug 2025 – Present",
+        "summary": "Delivering mobility data solutions across high-performance Python, Java, and AWS services.",
+        "bullets": [
+          "Develop & optimize high-performance APIs & software solutions using Python, Java, and AWS to deliver mobility data solutions",
+          "Architect & integrate scalable data processing workflows to enable new customer-facing features while maintaining existing systems with focus on clean code & CI/CD best practices, while maintaining cost efficiency across cloud-native environments"
+        ],
+        "tags": [
+          "Python",
+          "Java",
+          "AWS",
+          "APIs",
+          "CI/CD"
+        ],
+        "media": [
+          {
+            "src": "/images/INRIXlogo.png",
+            "alt": "INRIX logo",
+            "variant": "logo"
+          }
+        ],
+        "links": [
+          {
+            "label": "Talk about my work at INRIX so far",
+            "href": "https://example.com/work/inrix-backend"
+          }
+        ]
+      },
+      {
+        "id": "inrix-intern-2024",
+        "title": "Backend Software Engineering Intern",
+        "organization": "INRIX",
+        "organizationNote": "INRIX is one of the longest-running traffic intelligence providers, ingesting global mobility data streams.",
+        "timeframe": "Jun 2024 – Sep 2024",
+        "summary": "Focused on SafetyView API efficiency and modernization across Python/Java services.",
+        "bullets": [
+          "Enhanced efficiency of customer-facing API using Python, Java, & AWS technologies, cutting costs by 30%-90%",
+          "Upgraded legacy code to modern versions to improve performance & maintainability while ensuring backward compatibility"
+        ],
+        "tags": [
+          "Java",
+          "Python",
+          "AWS",
+          "Serverless",
+          "Optimization"
+        ],
+        "media": [
+          {
+            "src": "/images/INRIXlogo.png",
+            "alt": "INRIX brand artwork",
+            "variant": "logo"
+          }
+        ],
+        "links": [
+          {
+            "label": "Talk about my time at INRIX (Summer 2024)",
+            "href": "mailto:shivjhalani@gmail.com?subject=SafetyView%20pipeline%20details"
+          }
+        ]
+      },
+      {
+        "id": "inrix-intern-2023",
+        "title": "Software Engineering Intern",
+        "organization": "INRIX",
+        "organizationNote": "INRIX is one of the longest-running traffic intelligence providers, ingesting global mobility data streams.",
+        "timeframe": "Jun 2023 – Sep 2023",
+        "summary": "Automated SafetyView data pipelines and rallied a global hackathon team during Innovation Week.",
+        "bullets": [
+          "Implemented automated multithreaded data ingestion pipeline for an internal tool using Java, Python, & AWS technologies",
+          "Mitigated error-prone data update process, improved efficiency by 20%, deployed code to production & tested in CI/CD pipeline",
+          "Led 11-member team to final round of company-wide hackathon, through global cross-team collaboration & project management"
+        ],
+        "tags": [
+          "Java",
+          "Python",
+          "AWS",
+          "Automation"
+        ],
+        "media": [
+          {
+            "src": "/images/INRIXlogo.png",
+            "alt": "INRIX brand artwork",
+            "variant": "logo"
+          }
+        ],
+        "links": [
+          {
+            "label": "Talk about my time at INRIX (Summer 2023)",
+            "href": "https://example.com/work/inrix-intern-2023"
+          }
+        ]
+      },
+      {
+        "id": "ey-data-science",
+        "title": "Data Science Intern",
+        "organization": "Ernst & Young",
+        "organizationNote": "EY is a Big Four consulting and audit firm with a large data & AI practice.",
+        "timeframe": "Jun 2022 – Aug 2022",
+        "summary": "Designed a voice-enabled analytics dashboard that translates natural language into SQL queries so CXO teams can self-serve insights.",
+        "bullets": [
+          "Used spaCy, pandas, sent2vec, and matplotlib to interpret voice commands, generate SQL, and visualize dashboards automatically.",
+          "Owned the project end-to-end: scoping requirements, prototyping NLP intents, and presenting the deliverable to leadership.",
+          "Documented deployment + usage practices so other teams can build on the foundation for future analytics tools."
+        ],
+        "tags": [
+          "Python",
+          "spaCy",
+          "pandas",
+          "Data Viz",
+          "NLP"
+        ],
+        "media": [
+          {
+            "src": "/images/ey.png",
+            "alt": "EY dashboard concept artwork",
+            "variant": "logo"
+          }
+        ],
+        "links": [
+          {
+            "label": "Talk about my time at EY",
+            "href": "mailto:shivjhalani@gmail.com?subject=EY%20dashboard"
+          }
+        ]
+      },
+      {
+        "id": "ntt-summer",
+        "title": "Summer Intern",
+        "organization": "NTT Data Services",
+        "organizationNote": "NTT Data Services is a global IT services company pairing enterprise clients with engineering teams.",
+        "timeframe": "Jun 2019 – Jun 2019",
+        "summary": "First exposure to professional data science: explored pandas/numpy/sklearn to understand how ML pipelines come together.",
+        "bullets": [
+          "Built small ML experiments that combined statistical analysis, feature engineering, and model evaluation.",
+          "Learned how production teams review code, communicate blockers, and share knowledge — a catalyst for pursuing CS at SCU."
+        ],
+        "tags": [
+          "Python",
+          "pandas",
+          "numpy",
+          "sklearn"
+        ],
+        "media": [
+          {
+            "src": "/images/ntt.png",
+            "alt": "NTT Data internship artwork",
+            "variant": "logo"
+          }
+        ],
+        "links": [
+          {
+            "label": "Talk about my time at NTT Data",
+            "href": "mailto:shivjhalani@gmail.com?subject=NTT%20internship"
+          }
+        ]
+      }
+    ],
+    "projectSections": [
+      {
+        "id": "projects",
+        "title": "Projects & Hackathons",
+        "entries": [
+          {
+            "id": "ai-lecture-note-assistant",
+            "title": "AI Lecture Note-Taking Assistant — NVIDIA GTC 2025 Golden Ticket Submission",
+            "timeframe": "January 2025",
+            "summary": "Backend for an AI-powered lecture companion that turns raw audio into structured Google Docs notes using speech-to-text + LLM pipelines.",
+            "bullets": [
+              "Designed & implemented backend system that converts lecture audio into structured, comprehensive notes using LLM pipelines",
+              "Engineered end-to-end workflow integrating speech-to-text, semantic summarization, and hierarchical note structuring synced with Google Docs",
+              "Built scalable API-based architecture to process long-form lectures while preserving key concepts, examples, and context",
+              "Positioned tool for dual-use by students and professors to improve accessibility, retention, and material distribution"
+            ],
+            "tags": [
+              "Python",
+              "LLM",
+              "Speech-to-Text",
+              "APIs"
+            ],
+            "links": [
+              {
+                "label": "Project Demo",
+                "href": "https://www.youtube.com/watch?v=ZSaw7HFSVjk"
+              }
+            ],
+            "media": [
+              {
+                "src": "/images/projects/nvidia.png",
+                "alt": "Screenshot from NVIDIA AI lecture assistant demo"
+              }
+            ]
+          },
+          {
+            "id": "post-filtering-extension",
+            "title": "Post Filtering Extension — 1st Place Winner, xAI Hackathon (Replit Award)",
+            "timeframe": "October 2024",
+            "summary": "Chrome extension that filters engagement farmers, self-promoters, and bots on X using Grok 2 / xAI APIs.",
+            "bullets": [
+              "Designed & implemented backend architecture of Chrome extension that filters out engagement farmers, self-promoters, & bots on X using Grok 2 LLM and xAI APIs, fostering relevant and meaningful conversations",
+              "Integrated X APIs to retrieve and process posts in a streaming architecture, enabling incremental data delivery & reduced latency"
+            ],
+            "tags": [
+              "Python",
+              "LLM",
+              "xAI"
+            ],
+            "links": [
+              {
+                "label": "xAI/Replit Feature & Demo",
+                "href": "https://x.com/replit/status/1847043212667670667?s=46&t=h62ESz3AaX2SW8S3sfnqcw"
+              }
+            ],
+            "media": [
+              {
+                "src": "/images/projects/grok.png",
+                "alt": "Post filtering extension"
+              }
+            ]
+          },
+          {
+            "id": "academic-support-platform",
+            "title": "Academic Support Platform — Google Gemini API Developer Competition Submission",
+            "timeframe": "August 2024",
+            "summary": "Backend for a Gemini-powered academic assistant that simplifies registration and real-time support.",
+            "bullets": [
+              "Engineered backend architecture of web application designed to enhance academic life by simplifying course registration & providing real-time academic support using Python, Flask, & effective prompt engineering for Google’s Gemini API",
+              "Utilized Google’s Gemini API to develop AI-driven Virtual Tutor & Academic Advisor tools for personalized student assistance",
+              "Integrated Firebase for secure data storage & efficient management of chat histories, ensuring reliable app performance"
+            ],
+            "tags": [
+              "Python",
+              "Flask",
+              "Gemini",
+              "Firebase"
+            ],
+            "links": [
+              {
+                "label": "Project Demo",
+                "href": "https://www.youtube.com/watch?v=BVtw-ZKlJEM"
+              }
+            ],
+            "media": [
+              {
+                "src": "/images/projects/gemini.png",
+                "alt": "Academic support platform"
+              }
+            ]
+          },
+          {
+            "id": "career-fair-automation",
+            "title": "Career Fair Data Analysis Automation",
+            "timeframe": "April 2023",
+            "summary": "Automated the Santa Clara career center’s fair analytics workflow so peer advisors could see student + employer trends without spending a week inside Excel.",
+            "bullets": [
+              "Developed Python program using pandas library to automate the data analysis process for career fairs, providing quick & accurate insights into student & employer trends based on demographics & feedback",
+              "Reduced manual work & saved a week’s worth of time, increasing efficiency by 700% over 900+ rows of data"
+            ],
+            "tags": [
+              "Python",
+              "Pandas",
+              "Automation",
+              "Analytics"
+            ],
+            "links": [
+              {
+                "label": "Project Source Code",
+                "href": "https://github.com/sjhalani7/careerfairdata"
+              }
+            ],
+            "media": [
+              {
+                "src": "/images/projects/career-fair.svg",
+                "alt": "Career fair data visualization"
+              }
+            ]
+          },
+          {
+            "id": "health-match",
+            "title": "Health Match — Hack4Humanity Submission",
+            "timeframe": "February 2023",
+            "summary": "Hack4Humanity build that pairs symptoms with AI-powered specialist recommendations using Flask + OpenAI’s DaVinci 3 API.",
+            "bullets": [
+              "Designed & implemented backend architecture of Chrome extension that filters out engagement farmers, self-promoters, & bots on X using Grok 2 LLM and xAI APIs, fostering relevant and meaningful conversations",
+              "Integrated X APIs to retrieve and process posts in a streaming architecture, enabling incremental data delivery & reduced latency"
+            ],
+            "tags": [
+              "Python",
+              "Flask",
+              "OpenAI",
+              "Hackathon"
+            ],
+            "links": [
+              {
+                "label": "View Hackathon Demo",
+                "href": "https://devpost.com/software/appointmentaide"
+              }
+            ],
+            "media": [
+              {
+                "src": "/images/projects/health-match.svg",
+                "alt": "Health Match concept art"
+              }
+            ]
+          },
+          {
+            "id": "tripfolio",
+            "title": "Tripfol.io — 1st Place Winner, INRIX Hackathon @ Santa Clara University",
+            "timeframe": "November 2022",
+            "summary": "INRIX hackathon winner that builds optimized day-trip itineraries with a custom routing algorithm over INRIX APIs.",
+            "bullets": [
+              "Designed & implemented application backend using Python, Flask, & INRIX Routing API to develop optimized routing algorithm for users that generate an itinerary based on hotspots in a geographic location",
+              "Identified & implemented relevant graph theory to develop optimal routing algorithm in under 24 hours",
+              "Implemented Flask API to return line strings of coordinates to enable front-end map routing on Google Maps plugin"
+            ],
+            "tags": [
+              "Python",
+              "Flask",
+              "INRIX APIs",
+              "Graph Theory"
+            ],
+            "links": [
+              {
+                "label": "View Hackathon Demo",
+                "href": "https://devpost.com/software/bay-trips"
+              }
+            ],
+            "media": [
+              {
+                "src": "/images/projects/tripfolio.svg",
+                "alt": "Tripfol.io routing visualization"
+              }
+            ]
+          },
+          {
+            "id": "project-pineapple",
+            "title": "Project Pineapple — 2nd Place Winner, Hack4Humanity",
+            "timeframe": "February 2022",
+            "summary": "Safety-focused hack that schedules check-ins for nights out using a Python/Flask backend and SQLite storage.",
+            "bullets": [
+              "Designed application backend using Python, Flask, & SQLite that uses scheduled check-ins & user verification to allow a safe night out to reduce the likelihood of sexual assaults",
+              "Implemented an SQLite database using Python programming to store & maintain data of users effectively & systematically",
+              "Developed an API using Flask to fetch data from database & link to the front-end software for an efficient full-stack software"
+            ],
+            "tags": [
+              "Python",
+              "Flask",
+              "SQLite",
+              "Safety"
+            ],
+            "links": [
+              {
+                "label": "View Hackathon Demo",
+                "href": "https://devpost.com/software/project-pineapple"
+              }
+            ],
+            "media": [
+              {
+                "src": "/images/projects/project-pineapple.svg",
+                "alt": "Project Pineapple graphic"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "researchProjects": [
+      {
+        "id": "clickbait-detection",
+        "title": "Clickbait Detection on Social Platforms",
+        "organization": "Santa Clara University On-Campus Research",
+        "timeframe": "Jan 2024 – Jun 2025",
+        "summary": "Research assistantship exploring multi-modal topic modeling (LDA/LSA/BERTopic) and OpenAI embeddings to flag engagement-bait across two social platforms.",
+        "bullets": [
+          "Collaborated with team of 2 to detect clickbait on social media through OpenAI APIs & topic modeling algorithms like LDA",
+          "Utilized OpenAI APIs to summarize text columns, transform into vectors using sentenceTransformers library & employ cosine similarity to quantify correlation between the title & transcripts on two different datasets of a total of over 7700 rows",
+          "Co-authored research paper detailing significant findings, presented & published at the 2024 IISA conference"
+        ],
+        "tags": [
+          "OpenAI",
+          "LDA",
+          "NLP",
+          "Research"
+        ],
+        "links": [
+          {
+            "label": "IISA 2024 publication",
+            "href": "https://ieeexplore.ieee.org/document/10786672"
+          }
+        ],
+        "media": [
+          {
+            "src": "/images/research/clickbait.svg",
+            "alt": "Clickbait detection visuals"
+          }
+        ]
+      },
+      {
+        "id": "hate-speech-pagerank",
+        "title": "Online Hate Speech Spreader Detection",
+        "organization": "Santa Clara University On-Campus Research",
+        "timeframe": "Oct 2021 – Jan 2024",
+        "summary": "Led a modified PageRank study that flags high-influence hate speech accounts on social networks.",
+        "bullets": [
+          "Led team of 3 to detect & flag hate speech spreaders on online social networks using Python & libraries like sklearn",
+          "Modified Google’s PageRank algorithm to implement graph-based model using adjacency matrices to calculate user influence & measure hate speech spread within user networks, enabling data & network analysis on pre-trained machine learning models",
+          "Co-authored research paper detailing significant findings, presented & published at the 2023 International DSML conference"
+        ],
+        "tags": [
+          "Python",
+          "Graph ML",
+          "Sklearn",
+          "Research"
+        ],
+        "links": [
+          {
+            "label": "DSML 2023 paper",
+            "href": "https://aircconline.com/csit/abstract/v13n19/csit131916.html"
+          }
+        ],
+        "media": [
+          {
+            "src": "/images/research/hate-speech.svg",
+            "alt": "Hate speech research"
+          }
+        ]
+      }
+    ],
+    "santaClaraLife": [
+      {
+        "id": "leadership",
+        "title": "Leadership & Clubs",
+        "summary": "Poured energy into the orgs that shaped my SCU journey — scaling ACM sponsorships, mentoring peers, and amplifying entrepreneurship programs.",
+        "bullets": [
+          "ACM Director of Communications: led four industry liaisons to raise $20k+ for Hack for Humanity and launched a Roblox game jam with 75 participants.",
+          "ACM Industry Liaison: managed relationships with 10+ companies, driving $18k in sponsorships and professional development programs.",
+          "Theta Tau Professional Development Chair: organized professional development programming for the engineering fraternity.",
+          "Ciocca Center Student Advisory Board PR Director: shipped a bi-quarterly newsletter keeping founders informed on events and recruiting windows."
+        ],
+        "tags": [
+          "Community",
+          "Mentorship",
+          "Leadership"
+        ],
+        "media": [
+          {
+            "src": "/images/santaclara/acm.png",
+            "alt": "ACM leadership",
+            "variant": "logo"
+          }
+        ]
+      },
+      {
+        "id": "awards",
+        "title": "Awards & Honors",
+        "summary": "Selective distinctions that recognized scholarship, leadership, and service at Santa Clara.",
+        "bullets": [
+          "Student Life Award — recognized by SCU’s president as 1 of 23 seniors (out of 1,600+) improving campus life; featured in The Santa Clara’s ‘Toast to the Class of 2025 Award Winners.’",
+          "Summa Cum Laude — graduated with SCU’s highest academic distinction",
+          "Phi Beta Kappa — nation’s oldest arts & sciences honor society; membership extended to the top ~10% demonstrating intellectual integrity",
+          "Upsilon Pi Epsilon — international computing honor society recognizing the top cohort of CS students for scholarship and service",
+          "Alpha Sigma Nu — Jesuit honor society invitation reserved for <15% of the class who excel in scholarship, loyalty, and service",
+          "University Honors Program — selective interdisciplinary cohort (~68 of 1,500 admits) focused on critical inquiry and writing"
+        ],
+        "tags": [
+          "Honors",
+          "Awards"
+        ],
+        "media": [
+          {
+            "src": "/images/santaclara/award.JPG",
+            "alt": "Receiving the Student Life Award",
+            "variant": "photo",
+            "width": 3500,
+            "height": 1500
+          }
+        ]
+      }
+    ]
+  }
+}

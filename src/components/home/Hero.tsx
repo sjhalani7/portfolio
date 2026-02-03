@@ -9,7 +9,7 @@ import styles from "./Hero.module.css";
 
 export function Hero() {
   const profileImageSrc = getAssetPath("/images/my_pic111.jpg");
-  const agentFeedHref = getAssetPath("/api/agent-feed");
+  const agentFeedHref = getAssetPath("/api/agent-feed.json");
   const { kicker, name, pills, note, paragraphs } = heroContent;
 
   return (

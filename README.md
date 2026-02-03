@@ -44,7 +44,7 @@ The script looks at the latest 100 public events + repositories for that user an
 
 ### Agent-ready feed
 
-`GET /api/agent-feed` returns a structured JSON snapshot of everything shown on the site (hero text, learning focus areas, work/projects/research entries, etc.). Use it to let AI agents or other tools consume the portfolio data without scraping the UI.
+`/api/agent-feed.json` is generated at build time (via `npm run generate:agent-feed`, which also runs automatically before `npm run build`). It returns the structured JSON snapshot of all site data (hero text, learning focus areas, work/projects/research entries, etc.) so agents or other tools can consume the portfolio without scraping the UI.
 
 ## Linting
 

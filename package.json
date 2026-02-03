@@ -4,10 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "npm run generate:agent-feed",
     "build": "next build && next export",
     "start": "next dev",
     "lint": "next lint",
-    "update:github-summary": "node scripts/update-github-summary.mjs"
+    "update:github-summary": "node scripts/update-github-summary.mjs",
+    "generate:agent-feed": "tsc -p tsconfig.agent-feed.json && node scripts/.dist/scripts/generate-agent-feed.js"
   },
   "dependencies": {
     "clsx": "^2.1.1",
