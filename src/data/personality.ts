@@ -22,7 +22,7 @@ export const personalityHighlights: PersonalityHighlight[] = [
     description:
       "Golf is my reset button and the newest obsession I’m trying to level up.",
     details:
-      "I’m still new, but I’m hooked on the pursuit of that one flushed shot that lands pin-high. It’s wild how hard a stationary ball can be to hit—perfect practice in patience and iteration.",
+      "I’m still new, but I’m hooked on the pursuit of that one flushed shot that lands pin-high. It’s wild how hard a stationary ball can be to hit—perfect practice in patience and iteration. Fun fact: I just carded a hole-in-one on a 205-yard par 3 by absolutely flushing a 4i, then immediately called everyone I’ve ever golfed with!",
     image: { src: "/images/hobbies/golf.jpeg", alt: "On the course" },
   },
     {
