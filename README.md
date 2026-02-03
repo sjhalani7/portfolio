@@ -42,6 +42,10 @@ The script looks at the latest 100 public events + repositories for that user an
 
 `.github/workflows/update-github-summary.yml` runs every day at 07:00 UTC (plus manual `workflow_dispatch`). It executes the same script with the built-in `GITHUB_TOKEN`, commits `src/data/githubSummary.json` when changes occur, and pushes back to `main`.
 
+### Agent-ready feed
+
+`GET /api/agent-feed` returns a structured JSON snapshot of everything shown on the site (hero text, learning focus areas, work/projects/research entries, etc.). Use it to let AI agents or other tools consume the portfolio data without scraping the UI.
+
 ## Linting
 
 ```bash
