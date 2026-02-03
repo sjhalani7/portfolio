@@ -9,6 +9,7 @@ import styles from "./Hero.module.css";
 
 export function Hero() {
   const profileImageSrc = getAssetPath("/images/my_pic111.jpg");
+  const agentFeedHref = getAssetPath("/api/agent-feed");
   const { kicker, name, pills, note, paragraphs } = heroContent;
 
   return (
@@ -37,7 +38,7 @@ export function Hero() {
                 variant="secondary"
               />
               <ButtonLink
-                href="/api/agent-feed"
+                href={agentFeedHref}
                 label="AI-ready data"
                 variant="ghost"
                 external
