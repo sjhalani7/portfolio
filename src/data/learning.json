@@ -2,17 +2,17 @@
   {
     "id": "agentic-commerce-protocol",
     "title": "Agentic Commerce Protocol (ACP)",
-    "summary": "Working through how ACP’s protocol layers let merchants — even small local shops — plug in, broadcast inventory, and settle transactions agent-to-agent.",
+    "summary": "Documenting how ACP boils down to four merchant-side API calls that publish inventory, receive intents, quote orders, and settle—surprisingly approachable.",
     "tag": "Agentic Systems",
     "updatedAtISO": "2025-01-15T12:00:00.000Z",
-    "note": "Currently learning the basics of protocols"
+    "note": "Cool realization: the merchant integration really is just four API calls."
   },
   {
     "id": "transformer-black-box",
     "title": "Transformers, attention, and the LLM black box",
-    "summary": "Building intuition for vectors, embeddings, and attention weights, and their interactions with one another",
+    "summary": "Getting into the weeds of how the query vector interacts with K and V to reshape a token’s embedding during attention.",
     "tag": "Deep Learning",
     "updatedAtISO": "2025-01-14T12:00:00.000Z",
-    "note": "Currently understanding QKV for attention."
+    "note": "Tracing the Q·K softmax and how the weighted V updates each word."
   }
 ]
