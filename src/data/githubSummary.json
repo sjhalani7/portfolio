@@ -1,7 +1,7 @@
 {
-  "mostActiveHour": "7 PM–8 PM PT",
+  "mostActiveHour": "11 PM–12 AM PT",
   "languages": "TypeScript, Python, Jupyter Notebook",
-  "focus": "Shipping portfolio + personal-portfolio",
-  "siteLastUpdated": "Mar 4, 2026",
+  "focus": "Shipping portfolio",
+  "siteLastUpdated": "Mar 5, 2026",
   "siteLastChange": "Automated GitHub Action update: refresh summary data"
 }
