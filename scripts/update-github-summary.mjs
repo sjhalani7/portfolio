@@ -98,8 +98,24 @@ function getFocus(events, limit = 2) {
 }
 
 function getSiteMeta() {
-  const latestDate = execSync("git log -1 --date=short --pretty=%cd").toString().trim();
-  const latestMessage = execSync("git log -1 --pretty=%s").toString().trim();
+  const commitRows = execSync("git log --date=short --pretty=%cd%x1f%s%x1f%ae -n 100")
+    .toString()
+    .trim()
+    .split("\n")
+    .map((row) => {
+      const [date, message, authorEmail] = row.split("\u001f");
+      return { date, message, authorEmail };
+    });
+
+  const latestManualCommit =
+    commitRows.find(
+      ({ message, authorEmail }) =>
+        !message.startsWith("Automated GitHub Action update:") &&
+        !authorEmail.includes("github-actions[bot]"),
+    ) ?? commitRows[0];
+
+  const latestDate = latestManualCommit?.date || new Date().toISOString().slice(0, 10);
+  const latestMessage = latestManualCommit?.message || "Recent repository update";
   const formattedDate = new Intl.DateTimeFormat("en", {
     month: "short",
     day: "numeric",
