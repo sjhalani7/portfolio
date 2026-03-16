@@ -11,6 +11,7 @@ const username = process.env.GITHUB_USERNAME || "sjhalani7";
 const token = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || process.env.GITHUB_ACTION_TOKEN;
 const activityTimeZone = process.env.GITHUB_ACTIVITY_TIMEZONE || "America/Los_Angeles";
 const activityTzLabel = process.env.GITHUB_ACTIVITY_TZ_LABEL || "PT";
+const automationCommitPrefix = "Automated GitHub Action update:";
 
 async function fetchFromGitHub(url) {
   const headers = {
@@ -30,37 +31,60 @@ async function fetchFromGitHub(url) {
   return res.json();
 }
 
-function formatHourLabel(hour, timeZone) {
-  const date = new Date(`1970-01-01T${String(hour).padStart(2, "0")}:00:00.000Z`);
+function formatHourLabel(hour) {
+  const normalizedHour = ((hour % 24) + 24) % 24;
+  const date = new Date(Date.UTC(1970, 0, 1, normalizedHour));
   return new Intl.DateTimeFormat("en", {
     hour: "numeric",
     hour12: true,
-    timeZone,
+    timeZone: "UTC",
   }).format(date);
 }
 
 function formatHourRange(hour, timeZone, tzLabel) {
-  const currentLabel = formatHourLabel(hour, timeZone);
-  const nextLabel = formatHourLabel((hour + 1) % 24, timeZone);
+  const currentLabel = formatHourLabel(hour);
+  const nextLabel = formatHourLabel((hour + 1) % 24);
   return `${currentLabel}–${nextLabel} ${tzLabel}`;
 }
 
+function isAutomationCommitMessage(message) {
+  return typeof message === "string" && message.startsWith(automationCommitPrefix);
+}
+
+function isAutomationEvent(event) {
+  const actorLogin = String(event?.actor?.login || "").toLowerCase();
+  const pusherName = String(event?.payload?.pusher?.name || "").toLowerCase();
+  const commitMessages = Array.isArray(event?.payload?.commits)
+    ? event.payload.commits.map((commit) => commit?.message).filter(Boolean)
+    : [];
+
+  return (
+    actorLogin.includes("github-actions") ||
+    pusherName.includes("github-actions") ||
+    commitMessages.some((message) => isAutomationCommitMessage(message))
+  );
+}
+
 function getMostActiveHour(events, timeZone, tzLabel) {
-  if (!events.length) {
+  const meaningfulEvents = events.filter((event) => !isAutomationEvent(event));
+
+  if (!meaningfulEvents.length) {
     return "No activity data yet";
   }
 
   const formatter = new Intl.DateTimeFormat("en", {
     hour: "numeric",
     hour12: false,
+    hourCycle: "h23",
     timeZone,
   });
 
   const counts = Array.from({ length: 24 }, () => 0);
-  for (const event of events) {
+  for (const event of meaningfulEvents) {
     if (!event?.created_at) continue;
-    const hour = Number(formatter.format(new Date(event.created_at)));
-    if (!Number.isNaN(hour)) {
+    const parsedHour = Number(formatter.format(new Date(event.created_at)));
+    if (!Number.isNaN(parsedHour)) {
+      const hour = ((parsedHour % 24) + 24) % 24;
       counts[hour] += 1;
     }
   }
@@ -84,8 +108,9 @@ function getTopLanguages(repos, limit = 3) {
 }
 
 function getFocus(events, limit = 2) {
+  const meaningfulEvents = events.filter((event) => !isAutomationEvent(event));
   const counts = new Map();
-  for (const event of events) {
+  for (const event of meaningfulEvents) {
     const repoName = event?.repo?.name;
     if (!repoName) continue;
     counts.set(repoName, (counts.get(repoName) || 0) + 1);
@@ -110,7 +135,7 @@ function getSiteMeta() {
   const latestManualCommit =
     commitRows.find(
       ({ message, authorEmail }) =>
-        !message.startsWith("Automated GitHub Action update:") &&
+        !isAutomationCommitMessage(message) &&
         !authorEmail.includes("github-actions[bot]"),
     ) ?? commitRows[0];
 
