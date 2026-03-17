@@ -36,7 +36,7 @@ Environment variables:
 - `GITHUB_ACTIVITY_TIMEZONE` (default: `America/Los_Angeles`)
 - `GITHUB_ACTIVITY_TZ_LABEL` (default: `PT`)
 
-The script looks at the latest 100 public events + repositories for that user and rewrites the JSON file.
+The script looks at the latest 20 public events and the latest 100 repositories for that user, then rewrites the JSON file.
 
 ### Automated refresh
 

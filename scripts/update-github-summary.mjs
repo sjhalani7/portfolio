@@ -156,7 +156,7 @@ function getSiteMeta() {
 async function main() {
   console.log(`Fetching GitHub data for ${username}...`);
   const events = await fetchFromGitHub(
-    `https://api.github.com/users/${username}/events/public?per_page=100`,
+    `https://api.github.com/users/${username}/events/public?per_page=20`,
   );
   const repos = await fetchFromGitHub(
     `https://api.github.com/users/${username}/repos?per_page=100&sort=updated`,
