@@ -14,5 +14,13 @@
     "tag": "Deep Learning",
     "updatedAtISO": "2025-01-14T12:00:00.000Z",
     "note": "Tracing the Q·K softmax and how the weighted V updates each word."
+  },
+  {
+    "id": "x402-machine-payments",
+    "title": "x402 and machine payments",
+    "summary": "Exploring x402 as a payment primitive for agent-driven commerce, where software can discover services, transact, and settle value on its own.",
+    "tag": "Agentic Commerce",
+    "updatedAtISO": "2026-03-15T12:00:00.000Z",
+    "note": "Agent-driven commerce feels especially exciting in a world where agents keep getting more capable."
   }
 ]
