@@ -7,8 +7,9 @@ import styles from "./projects.module.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Projects & Hackathons | Shiv Jhalani",
-  description: "Selected projects and hackathon builds across mobility, AI tooling, and product experiments.",
+  title: "Product Builds & Hackathons | Shiv Jhalani",
+  description:
+    "Selected product builds and hackathon experiments across AI, backend systems, and product engineering.",
 };
 
 export default function ProjectsPage() {
@@ -17,8 +18,8 @@ export default function ProjectsPage() {
       <Container>
         <PageHeader
           kicker="Projects"
-          title="Projects & Hackathons"
-          description="A mix of shipping-grade projects and hackathon experiments that taught me how to move quickly without losing craft."
+          title="Product Builds & Hackathons"
+          description="A mix of product builds and hackathon experiments that taught me how to move quickly without losing craft."
         />
         {projectSections.map((section) => (
           <section key={section.id} className={styles.block}>

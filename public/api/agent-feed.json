@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-03T14:32:37.599Z",
+  "generatedAt": "2026-03-18T04:03:33.126Z",
   "site": {
     "owner": "Shiv Jhalani",
     "focusAreas": [
@@ -23,18 +23,26 @@
       {
         "id": "agentic-commerce-protocol",
         "title": "Agentic Commerce Protocol (ACP)",
-        "summary": "Working through how ACP’s protocol layers let merchants — even small local shops — plug in, broadcast inventory, and settle transactions agent-to-agent.",
+        "summary": "Documenting how ACP boils down to four merchant-side API calls that publish inventory, receive intents, quote orders, and settle—surprisingly approachable.",
         "tag": "Agentic Systems",
         "updatedAtISO": "2025-01-15T12:00:00.000Z",
-        "note": "Currently learning the basics of protocols"
+        "note": "Cool realization: the merchant integration really is just four API calls."
       },
       {
         "id": "transformer-black-box",
         "title": "Transformers, attention, and the LLM black box",
-        "summary": "Building intuition for vectors, embeddings, and attention weights, and their interactions with one another",
+        "summary": "Getting into the weeds of how the query vector interacts with K and V to reshape a token’s embedding during attention.",
         "tag": "Deep Learning",
         "updatedAtISO": "2025-01-14T12:00:00.000Z",
-        "note": "Currently understanding QKV for attention."
+        "note": "Tracing the Q·K softmax and how the weighted V updates each word."
+      },
+      {
+        "id": "x402-machine-payments",
+        "title": "x402 and machine payments",
+        "summary": "Exploring x402 as a payment primitive for agent-driven commerce, where software can discover services, transact, and settle value on its own.",
+        "tag": "Agentic Commerce",
+        "updatedAtISO": "2026-03-15T12:00:00.000Z",
+        "note": "Agent-driven commerce feels especially exciting in a world where agents keep getting more capable."
       }
     ],
     "readingQueue": [
@@ -72,11 +80,11 @@
       }
     ],
     "githubSummary": {
-      "mostActiveHour": "11 PM–12 AM PT",
-      "languages": "TypeScript, Python, Jupyter Notebook",
-      "focus": "Shipping portfolio",
-      "siteLastUpdated": "Feb 2, 2026",
-      "siteLastChange": "chore: refresh GitHub summary data"
+      "mostActiveHour": "10 PM–11 PM PT",
+      "languages": "Python, TypeScript, Jupyter Notebook",
+      "focus": "Shipping agentic-tool-registry + portfolio",
+      "siteLastUpdated": "Mar 16, 2026",
+      "siteLastChange": "stats update"
     },
     "personalityHighlights": [
       {
@@ -93,7 +101,7 @@
         "id": "golf",
         "title": "Weekend Golfer",
         "description": "Golf is my reset button and the newest obsession I’m trying to level up.",
-        "details": "I’m still new, but I’m hooked on the pursuit of that one flushed shot that lands pin-high. It’s wild how hard a stationary ball can be to hit—perfect practice in patience and iteration.",
+        "details": "I’m still new, but I’m hooked on the pursuit of that one flushed shot that lands pin-high. It’s wild how hard a stationary ball can be to hit—perfect practice in patience and iteration. Fun fact: I just carded a hole-in-one on a 205-yard par 3 by absolutely flushing a 4i, then immediately called everyone I’ve ever golfed with!",
         "image": {
           "src": "/images/hobbies/golf.jpeg",
           "alt": "On the course"
@@ -276,9 +284,40 @@
     ],
     "projectSections": [
       {
-        "id": "projects",
-        "title": "Projects & Hackathons",
+        "id": "product-builds",
+        "title": "Product Builds",
         "entries": [
+          {
+            "id": "aid-agentic-advertising-platform",
+            "title": "AID — Agentic Advertising Platform",
+            "timeframe": "September 2025 - October 2025",
+            "summary": "Built a backend to explore how agentic commerce and advertising could work, turning merchant product catalogs into vector-searchable listings and serving hybrid recommendations to authenticated AI agents.",
+            "bullets": [
+              "Designed & implemented backend architecture using FastAPI and OpenSearch to ingest structured merchant product catalogs and serve recommendations to authenticated AI agents",
+              "Engineered product ingestion pipeline that normalized product metadata, generated contextual embeddings via OpenAI’s Embeddings API, and indexed listings as vector-plus-metadata documents for semantic retrieval",
+              "Built hybrid recommendation system combining OpenSearch k-NN vector search with structured filters across price, brand, category, and attributes, then reranked results using weighted semantic similarity and product completeness scores",
+              "Implemented JWT-based affiliate tracking, impression logging, click redirects, and idempotent conversion reporting to measure downstream recommendation performance"
+            ],
+            "tags": [
+              "Python",
+              "FastAPI",
+              "OpenSearch",
+              "Vector Search",
+              "JWT"
+            ],
+            "links": [
+              {
+                "label": "Project Demo",
+                "href": "https://www.youtube.com/watch?v=40FzfjCIAJg"
+              }
+            ],
+            "media": [
+              {
+                "src": "/images/projects/aid-platform.svg",
+                "alt": "Illustration of AID's merchant catalog ingestion, vector retrieval, and agent recommendation flow"
+              }
+            ]
+          },
           {
             "id": "ai-lecture-note-assistant",
             "title": "AI Lecture Note-Taking Assistant — NVIDIA GTC 2025 Golden Ticket Submission",

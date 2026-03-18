@@ -34,7 +34,7 @@ export function Hero() {
               <ButtonLink href="/work" label="Work Experience" variant="primary" />
               <ButtonLink
                 href="/projects"
-                label="Projects & Hackathons"
+                label="Product Builds & Hackathons"
                 variant="secondary"
               />
               <ButtonLink

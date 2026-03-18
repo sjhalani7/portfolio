@@ -2,9 +2,35 @@ import type { SectionedEntries } from "@/types/experience";
 
 export const projectSections: SectionedEntries[] = [
   {
-    id: "projects",
-    title: "Projects & Hackathons",
+    id: "product-builds",
+    title: "Product Builds",
     entries: [
+      {
+        id: "aid-agentic-advertising-platform",
+        title: "AID — Agentic Advertising Platform",
+        timeframe: "September 2025 - October 2025",
+        summary:
+          "Built a backend to explore how agentic commerce and advertising could work, turning merchant product catalogs into vector-searchable listings and serving hybrid recommendations to authenticated AI agents.",
+        bullets: [
+          "Designed & implemented backend architecture using FastAPI and OpenSearch to ingest structured merchant product catalogs and serve recommendations to authenticated AI agents",
+          "Engineered product ingestion pipeline that normalized product metadata, generated contextual embeddings via OpenAI’s Embeddings API, and indexed listings as vector-plus-metadata documents for semantic retrieval",
+          "Built hybrid recommendation system combining OpenSearch k-NN vector search with structured filters across price, brand, category, and attributes, then reranked results using weighted semantic similarity and product completeness scores",
+          "Implemented JWT-based affiliate tracking, impression logging, click redirects, and idempotent conversion reporting to measure downstream recommendation performance",
+        ],
+        tags: ["Python", "FastAPI", "OpenSearch", "Vector Search", "JWT"],
+        links: [
+          {
+            label: "Project Demo",
+            href: "https://www.youtube.com/watch?v=40FzfjCIAJg",
+          },
+        ],
+        media: [
+          {
+            src: "/images/projects/aid-platform.svg",
+            alt: "Illustration of AID's merchant catalog ingestion, vector retrieval, and agent recommendation flow",
+          },
+        ],
+      },
       {
         id: "ai-lecture-note-assistant",
         title:
