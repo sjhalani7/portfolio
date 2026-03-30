@@ -124,7 +124,7 @@ export function NowSection({ learning, readingQueue, github }: NowSectionProps) 
             <div className={styles.sectionTitleRow}>
               <p className={styles.sectionTitle}>GitHub Snapshot</p>
               <span className={styles.sectionNote}>
-                * Auto-refreshed daily by a GitHub Action that runs <code>npm run update:github-summary</code>.
+                * Auto-refreshed weekly by a GitHub Action that runs <code>npm run update:github-summary</code>.
               </span>
             </div>
             {githubCards.map((card) => (

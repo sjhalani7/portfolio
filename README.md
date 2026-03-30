@@ -1,6 +1,6 @@
 # Shiv Jhalani — personal site
 
-Docs-inspired Next.js site for Shiv’s portfolio. It includes a fully themed UI system, expandable content routes, and live data for the "GitHub Snapshot" section that is refreshed every day.
+Docs-inspired Next.js site for Shiv’s portfolio. It includes a fully themed UI system, expandable content routes, and live data for the "GitHub Snapshot" section that is refreshed weekly.
 
 ## Development
 
@@ -40,7 +40,7 @@ The script looks at the latest 20 public events and the latest 100 repositories 
 
 ### Automated refresh
 
-`.github/workflows/update-github-summary.yml` runs every day at 07:00 UTC (plus manual `workflow_dispatch`). It executes the same script with the built-in `GITHUB_TOKEN`, commits `src/data/githubSummary.json` when changes occur, and pushes back to `main`.
+`.github/workflows/update-github-summary.yml` runs every Sunday at 07:17 UTC (plus manual `workflow_dispatch`). It executes the same script with the built-in `GITHUB_TOKEN`, commits `src/data/githubSummary.json` when changes occur, and pushes back to `main`.
 
 ### Agent-ready feed
 
