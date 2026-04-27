@@ -181,6 +181,18 @@
   font-size: 0.9rem;
 }
 
+.personalityLink {
+  color: var(--color-accent);
+  display: inline-block;
+  font-size: 0.9rem;
+  margin-top: 0.65rem;
+  text-decoration: none;
+}
+
+.personalityLink:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 900px) {
   .grid {
     grid-template-columns: 1fr;

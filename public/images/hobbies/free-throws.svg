@@ -1,0 +1,28 @@
+<svg width="900" height="600" viewBox="0 0 900 600" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Basketball free throw challenge</title>
+  <desc id="desc">A basketball dropping through a hoop above a free throw lane.</desc>
+  <rect width="900" height="600" rx="24" fill="#F7E3C1"/>
+  <rect x="0" y="380" width="900" height="220" fill="#C7783D"/>
+  <path d="M0 380H900" stroke="#7A3F24" stroke-width="6"/>
+  <path d="M260 600V380H640V600" stroke="#F8F0DF" stroke-width="8"/>
+  <path d="M330 600V380H570V600" stroke="#F8F0DF" stroke-width="5"/>
+  <path d="M315 380C315 438.5 361.5 486 419 486H481C538.5 486 585 438.5 585 380" stroke="#F8F0DF" stroke-width="5"/>
+  <path d="M450 600V380" stroke="#F8F0DF" stroke-width="4" stroke-dasharray="14 14"/>
+  <rect x="334" y="76" width="232" height="160" rx="12" fill="#EFE5D1" stroke="#4B342A" stroke-width="10"/>
+  <rect x="386" y="118" width="128" height="82" rx="6" stroke="#4B342A" stroke-width="8"/>
+  <rect x="431" y="232" width="38" height="58" fill="#4B342A"/>
+  <ellipse cx="450" cy="290" rx="104" ry="28" fill="#D84B37"/>
+  <ellipse cx="450" cy="290" rx="78" ry="17" fill="#F7E3C1"/>
+  <path d="M360 294C383 374 517 374 540 294" stroke="#F8F0DF" stroke-width="5"/>
+  <path d="M390 302L413 370" stroke="#F8F0DF" stroke-width="4"/>
+  <path d="M426 307L439 380" stroke="#F8F0DF" stroke-width="4"/>
+  <path d="M474 307L461 380" stroke="#F8F0DF" stroke-width="4"/>
+  <path d="M510 302L487 370" stroke="#F8F0DF" stroke-width="4"/>
+  <circle cx="450" cy="198" r="67" fill="#E96F2E" stroke="#6D341E" stroke-width="6"/>
+  <path d="M383 198H517" stroke="#6D341E" stroke-width="5"/>
+  <path d="M450 131V265" stroke="#6D341E" stroke-width="5"/>
+  <path d="M404 151C438 178 438 218 404 245" stroke="#6D341E" stroke-width="5"/>
+  <path d="M496 151C462 178 462 218 496 245" stroke="#6D341E" stroke-width="5"/>
+  <path d="M252 420C302 394 350 384 402 390" stroke="#F8F0DF" stroke-width="5" stroke-linecap="round"/>
+  <path d="M498 390C550 384 598 394 648 420" stroke="#F8F0DF" stroke-width="5" stroke-linecap="round"/>
+</svg>

@@ -161,6 +161,16 @@ export function NowSection({ learning, readingQueue, github }: NowSectionProps) 
                   <p className={styles.personalityTitle}>{item.title}</p>
                   <p className={styles.personalityDescription}>{item.description}</p>
                   <p className={styles.personalityDetails}>{item.details}</p>
+                  {item.link ? (
+                    <a
+                      className={styles.personalityLink}
+                      href={item.link.href}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      {item.link.label}
+                    </a>
+                  ) : null}
                 </div>
               </PanelCard>
             ))}

@@ -4,6 +4,7 @@ export interface PersonalityHighlight {
   description: string;
   details: string;
   image: { src: string; alt: string };
+  link?: { href: string; label: string };
 }
 
 export const personalityHighlights: PersonalityHighlight[] = [
@@ -25,10 +26,27 @@ export const personalityHighlights: PersonalityHighlight[] = [
       "I’m still new, but I’m hooked on the pursuit of that one flushed shot that lands pin-high. It’s wild how hard a stationary ball can be to hit—perfect practice in patience and iteration. Fun fact: I just carded a hole-in-one on a 205-yard par 3 by absolutely flushing a 4i, then immediately called everyone I’ve ever golfed with!",
     image: { src: "/images/hobbies/golf.jpeg", alt: "On the course" },
   },
-    {
+  {
+    id: "fifty-free-throws",
+    title: "50 Free Throws",
+    description:
+      "I’m documenting a year-long challenge to make 50 free throws in a row.",
+    details:
+      "The goal is simple and brutally honest: keep showing up, film the reps, and share the misses and progress until I can hit 50 straight. I’m tracking the journey on Instagram at @fiftyfreethrows.",
+    image: {
+      src: "/images/hobbies/free-throws.svg",
+      alt: "Basketball dropping through a hoop",
+    },
+    link: {
+      href: "https://www.instagram.com/fiftyfreethrows/",
+      label: "@fiftyfreethrows",
+    },
+  },
+  {
     id: "badminton",
     title: "Badminton Regular",
-    description: "Quick rallies, quicker decisions (plus the lifting sessions that keep me ready for them).",
+    description:
+      "Quick rallies, quicker decisions (plus the lifting sessions that keep me ready for them).",
     details:
       "I grew up playing competitively, so it’s still my go-to for high-intensity cardio. Weekly doubles plus strength work keep the timing, positioning, and explosive movement dialed in.",
     image: { src: "/images/hobbies/badminton.png", alt: "Badminton court" },
