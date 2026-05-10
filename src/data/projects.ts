@@ -6,6 +6,66 @@ export const projectSections: SectionedEntries[] = [
     title: "Product Builds",
     entries: [
       {
+        id: "vaen-agentic-harness-container-builder",
+        title: "VAEN — Agentic Harness Container Builder",
+        summary:
+          "Built an open-source Python CLI that packages instructions, skills, MCP server definitions, and client-specific configuration into a shareable `.agent` archive, replacing the manual process of zipping agent setups and porting files into the right places across repositories.",
+        bullets: [
+          "Designed & implemented end-to-end packaging architecture in Python to turn manifest-defined agent setups into portable `.agent` bundles for reuse across repositories and teams",
+          "Engineered manifest-driven build system that validated agent configuration and serialized setups into a deterministic OCI image-layout archive with canonical structure and safety checks",
+          "Built import workflow that materialized archived setups into client-specific layouts for OpenAI Codex, Anthropic Claude Code, and GitHub Copilot, automatically placing instructions, skills, and MCP configuration in the correct locations",
+        ],
+        tags: ["Python", "CLI", "YAML", "OCI", "Developer Tooling"],
+        links: [
+          {
+            label: "Project Demo",
+            href: "https://www.youtube.com/watch?v=qTPAzI8LVEw",
+          },
+          {
+            label: "Website",
+            href: "https://sjhalani7.github.io/vaen/",
+          },
+          {
+            label: "GitHub",
+            href: "https://github.com/sjhalani7/vaen",
+          },
+        ],
+        media: [
+          {
+            src: "/images/projects/vaen-platform.svg",
+            alt: "Illustration of VAEN's manifest-driven packaging, OCI archive generation, and client-specific import workflow",
+          },
+        ],
+      },
+      {
+        id: "atr-agentic-tool-registry",
+        title: "ATR — Agentic Tool Registry",
+        summary:
+          "Built an open-source Python CLI-backed metadata registry that helps coding agents discover external tools, APIs, MCP servers, and CLIs through structured metadata, so they can find the right tool first without loading full documentation into context up front.",
+        bullets: [
+          "Designed & implemented registry architecture in Python to organize agent-ready tools through compact discovery records, richer invocation specs, and verification metadata",
+          "Engineered validation and bundling pipeline that enforced schema correctness, publisher and URL policies, duplicate detection, and versioned registry artifacts for trusted distribution",
+          "Built progressive lookup workflow that returned lightweight discovery metadata first and resolved full tool usage details only for selected tools, reducing context load while preserving access to invocation details",
+        ],
+        tags: ["Python", "CLI", "JSONL", "Developer Tooling", "Agentic Systems"],
+        links: [
+          {
+            label: "Project Demo",
+            href: "https://www.youtube.com/watch?v=jMRM6Xz4Cl8",
+          },
+          {
+            label: "GitHub",
+            href: "https://github.com/sjhalani7/agentic-tool-registry",
+          },
+        ],
+        media: [
+          {
+            src: "/images/projects/atr-registry.svg",
+            alt: "Illustration of ATR's registry metadata, CLI cache, and progressive lookup workflow for coding agents",
+          },
+        ],
+      },
+      {
         id: "aid-agentic-advertising-platform",
         title: "AID — Agentic Advertising Platform",
         timeframe: "September 2025 - October 2025",
