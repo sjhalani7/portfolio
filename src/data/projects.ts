@@ -8,6 +8,7 @@ export const projectSections: SectionedEntries[] = [
       {
         id: "vaen-agentic-harness-container-builder",
         title: "VAEN — Agentic Harness Container Builder",
+        timeframe: "April 2026",
         summary:
           "Built an open-source Python CLI that packages instructions, skills, MCP server definitions, and client-specific configuration into a shareable `.agent` archive, replacing the manual process of zipping agent setups and porting files into the right places across repositories.",
         bullets: [
@@ -40,6 +41,7 @@ export const projectSections: SectionedEntries[] = [
       {
         id: "atr-agentic-tool-registry",
         title: "ATR — Agentic Tool Registry",
+        timeframe: "March 2026",
         summary:
           "Built an open-source Python CLI-backed metadata registry that helps coding agents discover external tools, APIs, MCP servers, and CLIs through structured metadata, so they can find the right tool first without loading full documentation into context up front.",
         bullets: [
