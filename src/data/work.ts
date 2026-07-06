@@ -9,10 +9,17 @@ export const workExperience: ExpandableEntry[] = [
       "INRIX is one of the longest-running traffic intelligence providers, ingesting global mobility data streams.",
     timeframe: "Aug 2025 – Present",
     summary:
-      "Delivering mobility data solutions across high-performance Python, Java, and AWS services.",
+      "Delivering production mobility data systems across Python, Java, AWS, geospatial data, and AI-native analytics workflows.",
     bullets: [
-      "Develop & optimize high-performance APIs & software solutions using Python, Java, and AWS to deliver mobility data solutions",
-      "Architect & integrate scalable data processing workflows to enable new customer-facing features while maintaining existing systems with focus on clean code & CI/CD best practices, while maintaining cost efficiency across cloud-native environments",
+      "Reduced customer-facing data delivery lag by 57% by migrating critical data pipelines for Trips product",
+      "Modernized 200+ production AWS Lambdas, upgrading legacy Python runtimes & standardizing deployments through CI/CD",
+      "Designed database restructure to reduce monthly storage by 90%, saving space on over 100M+ rows by removing redundant data and preventing cartesian explosion, improving read/write efficiency by 25%, and saving over $20K in costs annually",
+      "Automated provider eval workflow, cutting manual effort by 80%, saving 20+ developer hours/month, while improving reliability",
+      "Proposed & led a geospatial ML initiative from idea to production, now [used across multiple customer-facing products](https://inrix.com/resources/inrix-truck-parking-analysis/)",
+      "Authored & published a [blog post](https://inrix.com/blog/from-data-to-purpose-reimagining-commute-insights-at-inrix-innovation-week/) for INRIX's official blog series, highlighting the use of geospatial data in mobility solutions",
+      "Designed & implemented multiple end-to-end backend pipelines for new mobility products using Python, Java & AWS Services",
+      "Led 6-person AI-native backend effort with Athena and ClickHouse, enabling synchronous retrieval from over 10TB+ of data",
+      "Led AI workshops and GenAI hackathons at Santa Clara University, engaging INRIX & AWS leadership with 300+ participants",
     ],
     tags: ["Python", "Java", "AWS", "APIs", "CI/CD"],
     media: [
@@ -25,7 +32,15 @@ export const workExperience: ExpandableEntry[] = [
     links: [
       {
         label: "Talk about my work at INRIX so far",
-        href: "https://example.com/work/inrix-backend",
+        href: "mailto:shivjhalani@gmail.com?subject=INRIX%20work%20so%20far",
+      },
+      {
+        label: "INRIX Innovation Week Blog Post",
+        href: "https://inrix.com/blog/from-data-to-purpose-reimagining-commute-insights-at-inrix-innovation-week/",
+      },
+      {
+        label: "INRIX Truck Parking Analysis",
+        href: "https://inrix.com/resources/inrix-truck-parking-analysis/",
       },
     ],
   },
@@ -82,7 +97,7 @@ export const workExperience: ExpandableEntry[] = [
     links: [
       {
         label: "Talk about my time at INRIX (Summer 2023)",
-        href: "https://example.com/work/inrix-intern-2023",
+        href: "mailto:shivjhalani@gmail.com?subject=INRIX%20Summer%202023%20internship",
       },
     ],
   },

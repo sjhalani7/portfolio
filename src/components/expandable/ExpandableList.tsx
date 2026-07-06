@@ -3,7 +3,7 @@
 import clsx from "clsx";
 import Image from "next/image";
 import { useEffect, useId, useMemo, useRef, useState } from "react";
-import type { CSSProperties } from "react";
+import type { CSSProperties, ReactNode } from "react";
 import { Pill } from "@/components/ui/Pill";
 import type { ExpandableEntry } from "@/types/experience";
 import { getAssetPath } from "@/lib/paths";
@@ -118,7 +118,13 @@ function ExpandableListItem({ item, expanded, onToggle }: ItemProps) {
           />
         </div>
       ) : null}
-      <div className={styles.itemHeader}>
+      <button
+        type="button"
+        className={styles.itemHeader}
+        onClick={onToggle}
+        aria-expanded={expanded}
+        aria-controls={contentId}
+      >
         <div className={styles.heading}>
           <div className={styles.titleRow}>
             <span className={styles.title}>{item.title}</span>
@@ -143,17 +149,14 @@ function ExpandableListItem({ item, expanded, onToggle }: ItemProps) {
           ) : null}
           {item.summary ? <p className={styles.summary}>{item.summary}</p> : null}
         </div>
-        <button
-          type="button"
+        <span
           className={clsx(styles.chevronButton)}
-          onClick={onToggle}
-          aria-expanded={expanded}
-          aria-controls={contentId}
           data-expanded={expanded}
+          aria-hidden="true"
         >
           <span className={styles.chevronIcon}>›</span>
-        </button>
-      </div>
+        </span>
+      </button>
       <div
         id={contentId}
         ref={contentRef}
@@ -194,7 +197,7 @@ function ExpandableListItem({ item, expanded, onToggle }: ItemProps) {
           {item.bullets ? (
             <ul className={styles.bulletList}>
               {item.bullets.map((bullet) => (
-                <li key={bullet}>{bullet}</li>
+                <li key={bullet}>{renderLinkedText(bullet)}</li>
               ))}
             </ul>
           ) : null}
@@ -225,4 +228,29 @@ function ExpandableListItem({ item, expanded, onToggle }: ItemProps) {
       </div>
     </div>
   );
+}
+
+function renderLinkedText(text: string): ReactNode[] {
+  const linkPattern = /\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g;
+  const nodes: ReactNode[] = [];
+  let lastIndex = 0;
+
+  for (const match of text.matchAll(linkPattern)) {
+    if (match.index > lastIndex) {
+      nodes.push(text.slice(lastIndex, match.index));
+    }
+
+    nodes.push(
+      <a key={`${match[1]}-${match.index}`} href={match[2]} target="_blank" rel="noreferrer noopener">
+        {match[1]}
+      </a>,
+    );
+    lastIndex = match.index + match[0].length;
+  }
+
+  if (lastIndex < text.length) {
+    nodes.push(text.slice(lastIndex));
+  }
+
+  return nodes;
 }
