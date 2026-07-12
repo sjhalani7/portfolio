@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-06T05:45:10.993Z",
+  "generatedAt": "2026-07-12T22:17:21.376Z",
   "site": {
     "owner": "Shiv Jhalani",
     "focusAreas": [
@@ -316,6 +316,38 @@
         "id": "product-builds",
         "title": "Product Builds",
         "entries": [
+          {
+            "id": "ace2-agentic-harness-delegation-platform",
+            "title": "ACE2 — Agentic Harness Delegation Platform",
+            "timeframe": "July 2026",
+            "summary": "Built a platform for agents and developers to delegate work to specialized agentic harnesses that are better suited for a task, using VAEN-packaged setups as the unit of execution and x402 / MPP as the monetization layer.",
+            "bullets": [
+              "Designed delegation architecture where a developer or agent can outsource work to a specialized VAEN-packaged harness when their own setup is not optimized for the required domain",
+              "Built monetizable run flow using x402 and MPP-style payment challenges, proof validation, run creation, status polling, and artifact delivery so harness creators can charge for specialized execution",
+              "Engineered execution runtime that resolves approved `.agent` bundles, prepares isolated per-run workspaces, launches Codex against the selected harness, and returns generated work as a Git-backed zip artifact"
+            ],
+            "tags": [
+              "Python",
+              "FastAPI",
+              "VAEN",
+              "Codex",
+              "x402",
+              "MPP",
+              "Agentic Systems"
+            ],
+            "links": [
+              {
+                "label": "Project Demo",
+                "href": "https://www.youtube.com/watch?v=6GDpj4AVSOY"
+              }
+            ],
+            "media": [
+              {
+                "src": "/images/projects/ace2-runtime.svg",
+                "alt": "Illustration of ACE2's task delegation, specialized VAEN harness, paid execution, and artifact workflow"
+              }
+            ]
+          },
           {
             "id": "vaen-agentic-harness-container-builder",
             "title": "VAEN — Agentic Harness Container Builder",
