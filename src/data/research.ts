@@ -2,6 +2,33 @@ import type { ExpandableEntry } from "@/types/experience";
 
 export const researchProjects: ExpandableEntry[] = [
   {
+    id: "chatgpt-mental-health-sentiment-analysis",
+    title: "ChatGPT Mental Health Support Sentiment Analysis",
+    organization: "Santa Clara University On-Campus Research",
+    timeframe: "Dec 2025",
+    summary:
+      "Co-authored ASONAM 2025 conference paper studying how people use ChatGPT for emotional and mental health support by mining social-network conversations with relevance classification and sentiment analysis.",
+    bullets: [
+      "Analyzed user-generated social-network content to quantify public sentiment toward ChatGPT in emotionally sensitive and therapeutic contexts",
+      "Introduced SemReC, a supervised relevance classification method, and PASS, an unsupervised similarity-based approach, to identify posts suggesting therapeutic use of ChatGPT",
+      "Modeled affective sentiment propagation in threaded conversations with HierSent and AggSent, tree-structured methods for multi-turn social discussions",
+      "Co-authored Springer conference paper accepted to ASONAM 2025 and published in Lecture Notes in Social Networks; credited with equal contribution",
+    ],
+    tags: ["LLMs", "Sentiment Analysis", "Social Media Mining", "Research"],
+    links: [
+      {
+        label: "ASONAM 2025 Springer paper",
+        href: "https://link.springer.com/chapter/10.1007/978-3-032-13509-4_11",
+      },
+    ],
+    media: [
+      {
+        src: "/images/research/chatgpt-mental-health.svg",
+        alt: "ChatGPT mental health sentiment analysis visuals",
+      },
+    ],
+  },
+  {
     id: "clickbait-detection",
     title: "Clickbait Detection on Social Platforms",
     organization: "Santa Clara University On-Campus Research",
