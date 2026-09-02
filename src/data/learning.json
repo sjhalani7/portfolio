@@ -1,5 +1,13 @@
 [
   {
+    "id": "karpathy-llm-wikis-knowledge-graphs",
+    "title": "Karpathy's LLM wikis and knowledge graphs",
+    "summary": "Learning how LLM-oriented wikis and graph-shaped knowledge bases can turn scattered notes, code paths, and references into something agents can retrieve and reason over.",
+    "tag": "Knowledge Systems",
+    "updatedAtISO": "2026-08-31T12:00:00.000Z",
+    "note": "Trying to understand where plain docs stop being enough and structured knowledge starts giving agents real leverage."
+  },
+  {
     "id": "agentic-commerce-protocol",
     "title": "Agentic Commerce Protocol (ACP)",
     "summary": "Documenting how ACP boils down to four merchant-side API calls that publish inventory, receive intents, quote orders, and settle—surprisingly approachable.",

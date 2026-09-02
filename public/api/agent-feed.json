@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T06:25:34.963Z",
+  "generatedAt": "2026-09-01T04:22:03.763Z",
   "site": {
     "owner": "Shiv Jhalani",
     "focusAreas": [
@@ -20,6 +20,14 @@
   },
   "now": {
     "learning": [
+      {
+        "id": "karpathy-llm-wikis-knowledge-graphs",
+        "title": "Karpathy's LLM wikis and knowledge graphs",
+        "summary": "Learning how LLM-oriented wikis and graph-shaped knowledge bases can turn scattered notes, code paths, and references into something agents can retrieve and reason over.",
+        "tag": "Knowledge Systems",
+        "updatedAtISO": "2026-08-31T12:00:00.000Z",
+        "note": "Trying to understand where plain docs stop being enough and structured knowledge starts giving agents real leverage."
+      },
       {
         "id": "agentic-commerce-protocol",
         "title": "Agentic Commerce Protocol (ACP)",
@@ -80,11 +88,11 @@
       }
     ],
     "githubSummary": {
-      "mostActiveHour": "4 PM–5 PM PT",
+      "mostActiveHour": "11 PM–12 AM PT",
       "languages": "Python, TypeScript, Jupyter Notebook",
       "focus": "Shipping portfolio",
-      "siteLastUpdated": "Jul 12, 2026",
-      "siteLastChange": "add ACE2 project"
+      "siteLastUpdated": "Jul 30, 2026",
+      "siteLastChange": "add new mental health publciaiton"
     },
     "personalityHighlights": [
       {
