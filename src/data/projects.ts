@@ -6,6 +6,31 @@ export const projectSections: SectionedEntries[] = [
     title: "Product Builds",
     entries: [
       {
+        id: "ecomm-bench-payment-agent-safety-benchmark",
+        title: "EComm-Bench — Payment Agent Safety Benchmark",
+        timeframe: "September 2026",
+        summary:
+          "Built a benchmark for testing whether payment-capable AI agents can complete legitimate e-commerce payments while ignoring misleading invoice text.",
+        bullets: [
+          "Designed fixed paired benchmark scenarios for indirect prompt injection in simulated payment flows, separating benign utility, safe attack completion, attack resistance, over-refusal, and unauthorized value",
+          "Evaluated five models across 18 scenarios and five runs per model, producing 450 scenario executions with deterministic ledger-based grading",
+          "Published launch write-up framing EComm-Bench as a baseline for model behavior before additional payment-system safeguards are added",
+        ],
+        tags: ["Python", "Agents SDK", "Benchmarking", "Payment Safety", "Agentic Commerce"],
+        links: [
+          {
+            label: "Launch Post",
+            href: "https://x.com/shivjhalani7/status/2097756199773192436",
+          },
+        ],
+        media: [
+          {
+            src: "/images/projects/ecomm-bench.svg",
+            alt: "Illustration of EComm-Bench evaluating payment-agent safety across benign and attack scenarios",
+          },
+        ],
+      },
+      {
         id: "ace2-agentic-harness-delegation-platform",
         title: "ACE2 — Agentic Harness Delegation Platform",
         timeframe: "July 2026",

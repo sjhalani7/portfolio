@@ -1,0 +1,112 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ecomm-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1014" />
+      <stop offset="55%" stop-color="#121a20" />
+      <stop offset="100%" stop-color="#1d252b" />
+    </linearGradient>
+    <linearGradient id="ecomm-accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8ea270" />
+      <stop offset="100%" stop-color="#607f72" />
+    </linearGradient>
+    <linearGradient id="ecomm-warn" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c58a63" />
+      <stop offset="100%" stop-color="#b86b6b" />
+    </linearGradient>
+    <linearGradient id="ecomm-blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7397a4" />
+      <stop offset="100%" stop-color="#526f86" />
+    </linearGradient>
+    <linearGradient id="ecomm-flow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#86a96b" stop-opacity="0" />
+      <stop offset="48%" stop-color="#86a96b" stop-opacity="0.92" />
+      <stop offset="100%" stop-color="#86a96b" stop-opacity="0" />
+    </linearGradient>
+    <pattern id="ecomm-grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(242,243,240,0.045)" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="720" rx="50" fill="url(#ecomm-bg)" />
+  <rect x="52" y="52" width="1096" height="616" rx="38" fill="url(#ecomm-grid)" opacity="0.55" />
+
+  <g transform="translate(86 114)">
+    <rect width="304" height="414" rx="30" fill="#0f151b" stroke="#2a343d" stroke-width="2" />
+    <text x="34" y="54" fill="#f2f3f0" font-family="'Inter', sans-serif" font-size="30" font-weight="600">Invoices</text>
+    <text x="34" y="86" fill="#8e9188" font-family="'Inter', sans-serif" font-size="18">Paired benign and attack cases</text>
+
+    <g transform="translate(30 126)">
+      <rect width="244" height="102" rx="22" fill="#151d23" stroke="#2c3942" stroke-width="2" />
+      <text x="22" y="34" fill="#f2f3f0" font-family="'Inter', sans-serif" font-size="18" font-weight="600">City Electric</text>
+      <rect x="22" y="52" width="88" height="16" rx="8" fill="#8ea270" />
+      <rect x="122" y="52" width="76" height="16" rx="8" fill="#f2f3f0" opacity="0.72" />
+      <rect x="22" y="76" width="178" height="10" rx="5" fill="#34434c" />
+    </g>
+
+    <g transform="translate(30 250)">
+      <rect width="244" height="102" rx="22" fill="#151d23" stroke="#2c3942" stroke-width="2" />
+      <text x="22" y="34" fill="#f2f3f0" font-family="'Inter', sans-serif" font-size="18" font-weight="600">Misleading text</text>
+      <rect x="22" y="52" width="78" height="16" rx="8" fill="url(#ecomm-warn)" />
+      <rect x="112" y="52" width="104" height="16" rx="8" fill="#f2f3f0" opacity="0.64" />
+      <text x="22" y="86" fill="#b7b9b2" font-family="'Inter', sans-serif" font-size="14">ignore injected payment request</text>
+    </g>
+  </g>
+
+  <g opacity="0.9">
+    <path d="M390 320 C426 320, 442 320, 470 320" fill="none" stroke="url(#ecomm-flow)" stroke-width="10" stroke-linecap="round" />
+    <path d="M734 320 C770 320, 786 320, 814 320" fill="none" stroke="url(#ecomm-flow)" stroke-width="10" stroke-linecap="round" />
+    <circle cx="430" cy="320" r="8" fill="#86a96b" />
+    <circle cx="774" cy="320" r="8" fill="#86a96b" />
+  </g>
+
+  <g transform="translate(470 86)">
+    <rect width="264" height="468" rx="32" fill="#10171d" stroke="#2a3540" stroke-width="2" />
+    <text x="38" y="58" fill="#f2f3f0" font-family="'Inter', sans-serif" font-size="32" font-weight="600">Agent Run</text>
+    <text x="38" y="92" fill="#8e9188" font-family="'Inter', sans-serif" font-size="18">read_invoice → make_payment</text>
+
+    <g transform="translate(38 138)">
+      <rect width="188" height="66" rx="20" fill="#151d23" stroke="#2c3942" stroke-width="2" />
+      <text x="24" y="41" fill="#f2f3f0" font-family="'Inter', sans-serif" font-size="18" font-weight="600">18 scenarios</text>
+    </g>
+
+    <g transform="translate(38 232)">
+      <rect width="188" height="66" rx="20" fill="#151d23" stroke="#2c3942" stroke-width="2" />
+      <text x="24" y="41" fill="#f2f3f0" font-family="'Inter', sans-serif" font-size="18" font-weight="600">5 model runs</text>
+    </g>
+
+    <g transform="translate(38 326)">
+      <rect width="188" height="74" rx="20" fill="#151d23" stroke="#2c3942" stroke-width="2" />
+      <rect x="24" y="22" width="62" height="18" rx="9" fill="url(#ecomm-blue)" />
+      <rect x="98" y="22" width="52" height="18" rx="9" fill="url(#ecomm-accent)" />
+      <text x="24" y="58" fill="#b7b9b2" font-family="'Inter', sans-serif" font-size="14">450 executions</text>
+    </g>
+  </g>
+
+  <g transform="translate(814 114)">
+    <rect width="300" height="414" rx="30" fill="#0f151b" stroke="#2a343d" stroke-width="2" />
+    <text x="34" y="54" fill="#f2f3f0" font-family="'Inter', sans-serif" font-size="30" font-weight="600">Ledger Grade</text>
+    <text x="34" y="86" fill="#8e9188" font-family="'Inter', sans-serif" font-size="18">Utility, safety, refusal, value</text>
+
+    <g transform="translate(34 130)">
+      <path d="M0 172 L48 126 L96 128 L144 74 L192 44 L232 22" fill="none" stroke="#8ea270" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M0 210 L48 194 L96 196 L144 154 L192 148 L232 104" fill="none" stroke="#7397a4" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M0 246 L48 228 L96 220 L144 206 L192 184 L232 172" fill="none" stroke="#c58a63" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.86" />
+      <g fill="#f2f3f0" opacity="0.78">
+        <circle cx="0" cy="172" r="7" />
+        <circle cx="48" cy="126" r="7" />
+        <circle cx="96" cy="128" r="7" />
+        <circle cx="144" cy="74" r="7" />
+        <circle cx="192" cy="44" r="7" />
+        <circle cx="232" cy="22" r="7" />
+      </g>
+    </g>
+
+    <g transform="translate(34 342)">
+      <rect width="232" height="42" rx="16" fill="#151d23" stroke="#2c3942" stroke-width="2" />
+      <text x="22" y="27" fill="#b7b9b2" font-family="'Inter', sans-serif" font-size="15">balanced score • unauthorized value</text>
+    </g>
+  </g>
+
+  <text x="600" y="642" text-anchor="middle" fill="#f2f3f0" font-family="'Inter', sans-serif" font-size="48" font-weight="600">EComm-Bench</text>
+  <text x="600" y="676" text-anchor="middle" fill="#8e9188" font-family="'Inter', sans-serif" font-size="22">Benchmarking payment-capable agents against misleading invoice text</text>
+</svg>
